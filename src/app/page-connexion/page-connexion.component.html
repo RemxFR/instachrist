@@ -1,0 +1,12 @@
+<div>
+    <h1>CONNEXION</h1>
+
+    <div>
+        <form [formGroup]="connexionForm" (ngSubmit)="seConnecter()">
+            <input formControlName="login" maxlength="7" type="text">
+            <input formControlName="mdp" type="password">
+
+            <button type="submit">Se Connecter</button>
+        </form>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { PageInscriptionComponent } from './page-inscription/page-inscription.component';
 
 @Component({
   selector: 'ichrist-root',
