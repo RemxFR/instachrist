@@ -1,0 +1,10 @@
+<form [formGroup]="postForm" class="form-post" (ngSubmit)="enregistrerPost()">
+  <h3 class="titre-post-form">Créer ton post !</h3>
+  <label>url</label>
+  <input formControlName="url" class="url-post">
+  <label>Titre</label>
+  <input formControlName="titre" class="titre-post">
+  <label>Description</label>
+  <textarea formControlName="description" class="description-post"></textarea>
+  <button class="enregistrer-post" type="submit">Enregistrer</button>
+</form>

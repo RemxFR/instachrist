@@ -1,3 +1,17 @@
-<div>
-    
+<div class="fil-conteneur">
+  <ichrist-post-form (postEmetteur)="ajouterPostAuFil($event)"></ichrist-post-form>
+  <div class="liste-posts" *ngIf="listeDePosts.length > 0">
+    <div *ngFor="let post of listeDePosts">
+      <div class="post_container">
+        <img [src]="post.photo" class="photo"/>
+        <h4>{{ post.titre }}</h4>
+        <p>{{ post.description }}</p>
+        <div class="likes-et-actions"></div>
+        <div class="commentaires"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bouton-ajouter" (click)="allerAuFormulaireDePost()"><span class="bouton-label">+</span></div>
+
 </div>
